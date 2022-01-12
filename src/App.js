@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import Button from "./components/Button";
+import './components/style.css';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div style={{
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'flex-start',
+        gap: '1.2rem'
+      }}>
+        <Button>
+          Primary Button
+        </Button>
+        <Button type="solid">
+          Primary Button
+        </Button>
+        <Button type="secondary">
+          Primary Button
+        </Button>
+        <Button type="solid-secondary">
+          Primary Button
+        </Button>
+      </div>
     </div>
-  );
+  )
 }
-
-export default App;

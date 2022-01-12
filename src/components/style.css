@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --primary-theme: #1DA1F2;
+  --primary-blue-solid-hover: #1B94DE;
+  --primary-blue-outline-hover: #1B94DE12;
+  --primary-dimmed-bg-theme: #15202B;
+  --primary-black-theme: #000000;
+  --dimmed-bg-overlay: #192734;
+  --standard-white: #FFFFFF;
+  --standard-black: #000000;
+  --primary-black-outline-hover: #00000012;
+  --solid-danger-red: #F9185C;
+  --solid-danger-red-hover: #FF0000;
+}/*# sourceMappingURL=style.css.map */

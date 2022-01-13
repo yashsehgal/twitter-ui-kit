@@ -3,6 +3,8 @@ import FollowButton from "./components/Button/FollowButton";
 import DefaultLink from "./components/Link";
 import ActionLink from "./components/Link/ActionLink";
 import './components/style.css';
+import Tag from "./components/Tag";
+import LiveTag from "./components/Tag/LiveTag";
 
 export default function App() {
   return (
@@ -110,6 +112,8 @@ export default function App() {
         }}>
           <DefaultLink>Share this tweet</DefaultLink>
           <ActionLink>Share this tweet</ActionLink>
+          <Tag>Follows You</Tag>
+          <LiveTag />
         </div>
       </div>
     </div>

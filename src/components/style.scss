@@ -24,6 +24,18 @@
     // red solid color
     --solid-danger-red: #F9185C;
     // solid danger color while hovering
-    --solid-danger-red-hover: #FF0000;   
+    --solid-danger-red-hover: #FF000014;
+    // dark outline
+    --dark-outline: rgb(194, 194, 194);
+    // general theme colors
+    --ui-theme-yellow: #FFD400;
+    --ui-theme-purple: #7856FF;
+    --ui-theme-green: #00BA7C;
+    --ui-theme-pink: #F91880;
+    --ui-theme-orange: #FF7A00;
+    --ui-theme-blue: #1DA1F2;
 }
 
+.twitter-font {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}

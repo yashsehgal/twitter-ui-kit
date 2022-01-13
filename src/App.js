@@ -1,5 +1,7 @@
 import Button from "./components/Button";
 import FollowButton from "./components/Button/FollowButton";
+import DefaultLink from "./components/Link";
+import ActionLink from "./components/Link/ActionLink";
 import './components/style.css';
 
 export default function App() {
@@ -85,6 +87,29 @@ export default function App() {
           <FollowButton size="small" 
             username="yashsehgaldev"
           />
+        </div>
+      </div>
+      <div className="links-variations-wrapper"
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'flex-start',
+          gap: '1.2rem',
+          paddingRight: '3rem',
+          paddingLeft: '3rem',
+          paddingTop: '1rem'
+        }}
+      >
+        <h2>Link Components</h2>
+        <div style={{
+          display: 'flex',
+          flexDirection: 'row',
+          alignItems: 'center',
+          justifyContent: 'flex-start',
+          gap: '1.2rem'
+        }}>
+          <DefaultLink>Share this tweet</DefaultLink>
+          <ActionLink>Share this tweet</ActionLink>
         </div>
       </div>
     </div>

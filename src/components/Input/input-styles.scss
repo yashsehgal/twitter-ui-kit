@@ -22,6 +22,10 @@
 // input variant for general use-case on all the views
 .default-input {
     background-color: var(--default-input-bg);
+    &:focus {
+        background-color: var(--standard-white);
+        border-color: var(--primary-theme);
+    }
 }
 
 // input variant for message-filter search view

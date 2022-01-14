@@ -31,6 +31,10 @@
 .default-input {
   background-color: var(--default-input-bg);
 }
+.default-input:focus {
+  background-color: var(--standard-white);
+  border-color: var(--primary-theme);
+}
 
 .message-input {
   border-color: var(--dark-outline);

@@ -1,0 +1,32 @@
+a {
+    font-size: 14px;
+    font-family: inherit;
+    text-decoration: none;
+}
+
+.default-link {
+    color: var(--primary-theme);
+    font-weight: 500;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: transparent;
+    &:hover {
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-color: var(--primary-theme);
+    }
+}
+
+.action-link {
+    color: var(--primary-theme);
+    font-weight: 700;
+    border-radius: 12px;
+    padding: 0.125rem 0.520rem;
+    &:hover {
+        background: var(--primary-blue-outline-hover);
+        color: var(--primary-blue-solid-hover);
+    }
+    &:focus:hover {
+        background: var(--primary-blue-outline-hover-dark);
+    }
+}

@@ -1,0 +1,35 @@
+
+.input {
+    padding: 0.6rem 1.2rem;
+    &::placeholder {
+        color: var(--input-placeholder-color);
+        font-weight: 300;
+        font-size: 15px;
+    }
+    border-radius: 32px;
+    color: var(--input-placeholder-color);
+    font-weight: 300;
+    font-size: 15px;
+    width: 340px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    &:focus {
+        outline: none !important;
+    }
+}
+
+// input variant for general use-case on all the views
+.default-input {
+    background-color: var(--default-input-bg);
+}
+
+// input variant for message-filter search view
+.message-input {
+    border-color: var(--dark-outline);
+}
+
+// input variant for explore, search view
+.search-input {
+
+}

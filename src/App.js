@@ -26,6 +26,11 @@ export default function App() {
       'profile_image': 'https://pbs.twimg.com/profile_images/1354479643882004483/Btnfm47p_400x400.jpg',
       'fullName': 'Twitter',
       'username': 'Twitter'
+    },
+    {
+      'profile_image': 'https://pbs.twimg.com/profile_images/1354479643882004483/Btnfm47p_400x400.jpg',
+      'fullName': 'Twitter',
+      'username': 'Twitter'
     }
   ]);
   return (

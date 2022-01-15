@@ -24,9 +24,9 @@ export default function Input({
         'className': (className) ? `input ${_uiVariant} ${className}` : `input ${_uiVariant}`,
         'id': (id) ? id : '',
         'onChange': onChange,
-        'value': (value) ? value : null,
+        'value': (value) ? value : undefined,
         'style': style,
-        'defaultValue': (defaultValue) ? defaultValue : ''
+        'defaultValue': (defaultValue) ? defaultValue : undefined
     }
 
     return (

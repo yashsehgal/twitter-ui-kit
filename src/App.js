@@ -1,6 +1,7 @@
 import Button from "./components/Button";
 import FollowButton from "./components/Button/FollowButton";
 import Input from "./components/Input";
+import SearchInput from "./components/Input/SearchInput";
 import DefaultLink from "./components/Link";
 import ActionLink from "./components/Link/ActionLink";
 import './components/style.css';
@@ -165,6 +166,12 @@ export default function App() {
             type="text"
             placeholder="Search for accounts, topics, etc"
           />
+          <Input 
+            type="text"
+            placeholder="Search and Message People"
+            UIVariant="message"
+          />
+          <SearchInput />
         </div>
       </div>
     </div>

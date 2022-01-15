@@ -38,4 +38,34 @@
 
 .message-input {
   border-color: var(--dark-outline);
+}
+.message-input::-moz-placeholder {
+  text-align: center;
+}
+.message-input:-ms-input-placeholder {
+  text-align: center;
+}
+.message-input::placeholder {
+  text-align: center;
+}
+.message-input:focus {
+  background-color: var(--standard-white);
+  border-color: var(--primary-theme);
+}
+.message-input:focus::-moz-placeholder {
+  text-align: left;
+}
+.message-input:focus:-ms-input-placeholder {
+  text-align: left;
+}
+.message-input:focus::placeholder {
+  text-align: left;
+}
+
+.search-input {
+  background-color: var(--default-input-bg);
+}
+.search-input:focus {
+  background-color: var(--standard-white);
+  border-color: var(--primary-theme);
 }/*# sourceMappingURL=input-styles.css.map */

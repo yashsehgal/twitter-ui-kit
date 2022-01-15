@@ -31,9 +31,23 @@
 // input variant for message-filter search view
 .message-input {
     border-color: var(--dark-outline);
+    &::placeholder {
+        text-align: center;
+    }
+    &:focus {
+        background-color: var(--standard-white);
+        border-color: var(--primary-theme);
+        &::placeholder {
+            text-align: left;
+        }
+    }
 }
 
 // input variant for explore, search view
 .search-input {
-
+    background-color: var(--default-input-bg);
+    &:focus {
+        background-color: var(--standard-white);
+        border-color: var(--primary-theme);
+    }
 }

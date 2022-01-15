@@ -13,19 +13,19 @@ import WhoToFollow from "./components/WhoToFollow";
 export default function App() {
   const [demoSuggestedUsersRef] = useState([
     {
-      'profile_image': 'https://images.unsplash.com/photo-1640960543409-dbe56ccc30e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80',
-      'fullName': 'Peter Stark',
-      'username': 'peter_stark'
+      'profile_image': 'https://pbs.twimg.com/profile_images/1372019899246120965/lTeCqGyR_400x400.jpg',
+      'fullName': 'Yash Sehgal 🍊',
+      'username': 'yashsehgaldev'
     },
     {
-      'profile_image': 'https://images.unsplash.com/photo-1640960543409-dbe56ccc30e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80',
-      'fullName': 'Peter Stark',
-      'username': 'peter_stark'
+      'profile_image': 'https://pbs.twimg.com/profile_images/1381737932780752896/MbHGl54A_400x400.png',
+      'fullName': 'Notion',
+      'username': 'NotionHQ'
     },
     {
-      'profile_image': 'https://images.unsplash.com/photo-1640960543409-dbe56ccc30e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80',
-      'fullName': 'Peter Stark',
-      'username': 'peter_stark'
+      'profile_image': 'https://pbs.twimg.com/profile_images/1354479643882004483/Btnfm47p_400x400.jpg',
+      'fullName': 'Twitter',
+      'username': 'Twitter'
     }
   ]);
   return (

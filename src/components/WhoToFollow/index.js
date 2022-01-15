@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import FollowButton from "../Button/FollowButton";
+import DefaultLink from '../Link/index';
 import './who-to-follow-styles.css';
 
 export default function WhoToFollow({
@@ -26,7 +28,7 @@ export default function WhoToFollow({
                 id={whoToFollowProperties.id}
                 style={whoToFollowProperties.style}
             >
-                <h3>Who To Follow</h3>
+                <h3 className="who-to-follow-title">Who To Follow</h3>
                 <div className="suggested-users-follow_action-wrapper">
                     {suggestedUsersListRef.map((suggestedUser, index) => {
                         return (
@@ -44,10 +46,19 @@ export default function WhoToFollow({
                                             <p className="suggested-user-username">{suggestedUser.username}</p>
                                         </div>
                                     </div>
+                                    <FollowButton 
+                                        size='small'
+                                        username={suggestedUser.username}
+                                    />
                                 </div>
                             </React.Fragment>
                         )
                     })}
+                </div>
+                <div className="show-more-action-wrapper">
+                    <DefaultLink className="show-more-action-link">
+                        Show more
+                    </DefaultLink>
                 </div>
             </div>
         </React.Fragment>

@@ -32,11 +32,17 @@ export default function WhoToFollow({
                         return (
                             <React.Fragment key={index} >
                                 <div className="suggested-user-block">
-                                    <div className="suggested-user-profile-photo-wrapper">
-                                        <img src={suggestedUser.profile_image} 
-                                            alt={`profile ${suggestedUser.username}`}
-                                            className="suggested-user-profile-photo"
-                                        />
+                                    <div className="suggested-user-details-wrapper">
+                                        <div className="suggested-user-profile-photo-wrapper">
+                                            <img src={suggestedUser.profile_image} 
+                                                alt={`profile ${suggestedUser.username}`}
+                                                className="suggested-user-profile-photo"
+                                            />
+                                        </div>
+                                        <div className="suggested-user-account-details-wrapper">
+                                            <h5 className="suggested-user-fullName">{suggestedUser.fullName}</h5>
+                                            <p className="suggested-user-username">{suggestedUser.username}</p>
+                                        </div>
                                     </div>
                                 </div>
                             </React.Fragment>

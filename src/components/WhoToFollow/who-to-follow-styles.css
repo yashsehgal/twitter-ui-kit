@@ -21,13 +21,23 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
 }
-.who-to-follow-container > .suggested-users-follow_action-wrapper > .suggested-user-block > .suggested-user-profile-photo-wrapper {
+.who-to-follow-container > .suggested-users-follow_action-wrapper > .suggested-user-block > .suggested-user-details-wrapper > .suggested-user-profile-photo-wrapper {
   width: 60px;
   height: auto;
 }
-.who-to-follow-container > .suggested-users-follow_action-wrapper > .suggested-user-block > .suggested-user-profile-photo-wrapper > .suggested-user-profile-photo {
+.who-to-follow-container > .suggested-users-follow_action-wrapper > .suggested-user-block > .suggested-user-details-wrapper > .suggested-user-profile-photo-wrapper > .suggested-user-profile-photo {
   width: 100%;
   height: auto;
   border-radius: 50%;
+}
+.who-to-follow-container > .suggested-users-follow_action-wrapper > .suggested-user-block > .suggested-user-details-wrapper > .suggested-user-account-details-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.4rem;
 }/*# sourceMappingURL=who-to-follow-styles.css.map */

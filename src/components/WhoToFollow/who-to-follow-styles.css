@@ -1,0 +1,33 @@
+.who-to-follow-container {
+  width: 420px;
+  padding: 16px;
+  border-radius: 18px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: var(--primary-white-overlay-bg);
+}
+.who-to-follow-container > .suggested-users-follow_action-wrapper {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 0.4rem;
+}
+.who-to-follow-container > .suggested-users-follow_action-wrapper > .suggested-user-block {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.who-to-follow-container > .suggested-users-follow_action-wrapper > .suggested-user-block > .suggested-user-profile-photo-wrapper {
+  width: 60px;
+  height: auto;
+}
+.who-to-follow-container > .suggested-users-follow_action-wrapper > .suggested-user-block > .suggested-user-profile-photo-wrapper > .suggested-user-profile-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}/*# sourceMappingURL=who-to-follow-styles.css.map */

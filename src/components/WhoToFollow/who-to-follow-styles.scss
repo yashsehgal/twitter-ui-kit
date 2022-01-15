@@ -1,0 +1,31 @@
+
+.who-to-follow-container {
+    width: 420px;
+    padding: 16px;
+    border-radius: 18px;
+    height: fit-content;
+    background-color: var(--primary-white-overlay-bg);
+
+    > .suggested-users-follow_action-wrapper {
+        width: 100%;
+        height: fit-content;
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 0.4rem;
+
+        > .suggested-user-block {
+            width: 100%;
+            height: fit-content;
+
+            > .suggested-user-profile-photo-wrapper {
+                width: 60px;
+                height: auto;
+                > .suggested-user-profile-photo {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}

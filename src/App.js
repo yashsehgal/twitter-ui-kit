@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Button from "./components/Button";
 import FollowButton from "./components/Button/FollowButton";
 import Input from "./components/Input";
@@ -7,8 +8,26 @@ import ActionLink from "./components/Link/ActionLink";
 import './components/style.css';
 import Tag from "./components/Tag";
 import LiveTag from "./components/Tag/LiveTag";
+import WhoToFollow from "./components/WhoToFollow";
 
 export default function App() {
+  const [demoSuggestedUsersRef] = useState([
+    {
+      'profile_image': 'https://images.unsplash.com/photo-1640960543409-dbe56ccc30e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80',
+      'fullName': 'Peter Stark',
+      'username': 'peter_stark'
+    },
+    {
+      'profile_image': 'https://images.unsplash.com/photo-1640960543409-dbe56ccc30e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80',
+      'fullName': 'Peter Stark',
+      'username': 'peter_stark'
+    },
+    {
+      'profile_image': 'https://images.unsplash.com/photo-1640960543409-dbe56ccc30e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80',
+      'fullName': 'Peter Stark',
+      'username': 'peter_stark'
+    }
+  ]);
   return (
     <div className="app twitter-font"
       style={{
@@ -173,6 +192,22 @@ export default function App() {
           />
           <SearchInput />
         </div>
+      </div>
+      <div className="input-variations-wrapper"
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'flex-start',
+          gap: '1.2rem',
+          paddingRight: '3rem',
+          paddingLeft: '3rem',
+          paddingTop: '1rem'
+        }}
+      >
+        <h2>Who To Follow Component</h2>
+        <WhoToFollow 
+          suggestedUsers={demoSuggestedUsersRef}
+        />
       </div>
     </div>
   )

@@ -22,7 +22,9 @@
   grid-template-columns: auto;
   row-gap: 0.4rem;
 }
-.who-to-follow-container > .suggested-users-follow_action-wrapper > .suggested-user-block {
+.who-to-follow-container
+  > .suggested-users-follow_action-wrapper
+  > .suggested-user-block {
   padding-right: 0.8rem;
   padding-left: 0.8rem;
   width: 360px;
@@ -34,27 +36,45 @@
   align-items: center;
   justify-content: space-between;
 }
-.who-to-follow-container > .suggested-users-follow_action-wrapper > .suggested-user-block:hover {
+.who-to-follow-container
+  > .suggested-users-follow_action-wrapper
+  > .suggested-user-block:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
-.who-to-follow-container > .suggested-users-follow_action-wrapper > .suggested-user-block > .suggested-user-details-wrapper {
+.who-to-follow-container
+  > .suggested-users-follow_action-wrapper
+  > .suggested-user-block
+  > .suggested-user-details-wrapper {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 0.6rem;
 }
-.who-to-follow-container > .suggested-users-follow_action-wrapper > .suggested-user-block > .suggested-user-details-wrapper > .suggested-user-profile-photo-wrapper {
-  width: 60px;
+.who-to-follow-container
+  > .suggested-users-follow_action-wrapper
+  > .suggested-user-block
+  > .suggested-user-details-wrapper
+  > .suggested-user-profile-photo-wrapper {
+  width: 52px;
   margin: 0;
   padding: 0;
   height: auto;
 }
-.who-to-follow-container > .suggested-users-follow_action-wrapper > .suggested-user-block > .suggested-user-details-wrapper > .suggested-user-profile-photo-wrapper > .suggested-user-profile-photo {
+.who-to-follow-container
+  > .suggested-users-follow_action-wrapper
+  > .suggested-user-block
+  > .suggested-user-details-wrapper
+  > .suggested-user-profile-photo-wrapper
+  > .suggested-user-profile-photo {
   width: 100%;
   height: auto;
   border-radius: 50%;
 }
-.who-to-follow-container > .suggested-users-follow_action-wrapper > .suggested-user-block > .suggested-user-details-wrapper > .suggested-user-account-details-wrapper {
+.who-to-follow-container
+  > .suggested-users-follow_action-wrapper
+  > .suggested-user-block
+  > .suggested-user-details-wrapper
+  > .suggested-user-account-details-wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -63,17 +83,27 @@
   height: -moz-fit-content;
   height: fit-content;
 }
-.who-to-follow-container > .suggested-users-follow_action-wrapper > .suggested-user-block > .suggested-user-details-wrapper > .suggested-user-account-details-wrapper * {
+.who-to-follow-container
+  > .suggested-users-follow_action-wrapper
+  > .suggested-user-block
+  > .suggested-user-details-wrapper
+  > .suggested-user-account-details-wrapper
+  * {
   padding: 0;
   margin: 0;
 }
-.who-to-follow-container > .suggested-users-follow_action-wrapper > .suggested-user-block > .suggested-user-details-wrapper > .suggested-user-account-details-wrapper > .suggested-user-username {
+.who-to-follow-container
+  > .suggested-users-follow_action-wrapper
+  > .suggested-user-block
+  > .suggested-user-details-wrapper
+  > .suggested-user-account-details-wrapper
+  > .suggested-user-username {
   font-size: 14px;
-  color: var(--primary-dimmed-bg-theme);
+  color: gray;
 }
 .who-to-follow-container > .show-more-action-wrapper {
   padding: 0.6rem 0.8rem;
 }
 .who-to-follow-container > .show-more-action-wrapper:hover {
   background-color: rgba(0, 0, 0, 0.05);
-}/*# sourceMappingURL=who-to-follow-styles.css.map */
+} /*# sourceMappingURL=who-to-follow-styles.css.map */

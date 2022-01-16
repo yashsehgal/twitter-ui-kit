@@ -226,6 +226,7 @@ export default function App() {
         <WhoToFollow 
           suggestedUsers={demoSuggestedUsersRef}
         />
+        <WhoToFollow />
       </div>
     </div>
   )

@@ -10,7 +10,7 @@ export default function WhoToFollow({
     className,
     id,
     style,
-    suggestedUsers
+    suggestedUsers = []
 }) {
     const [suggestedUsersListRef, setSuggestedUsersList] 
         = useState(suggestedUsers);
@@ -45,30 +45,9 @@ export default function WhoToFollow({
             >
                 <h3 className="who-to-follow-title">Who To Follow</h3>
                 <div className="suggested-users-follow_action-wrapper">
-                    {suggestedUsersListRef.map((suggestedUser, index) => {
-                        return (
-                            <React.Fragment key={index} >
-                                <div className="suggested-user-block">
-                                    <div className="suggested-user-details-wrapper">
-                                        <div className="suggested-user-profile-photo-wrapper">
-                                            <img src={suggestedUser.profile_image} 
-                                                alt={`profile ${suggestedUser.username}`}
-                                                className="suggested-user-profile-photo"
-                                            />
-                                        </div>
-                                        <div className="suggested-user-account-details-wrapper">
-                                            <h5 className="suggested-user-fullName">{suggestedUser.fullName}</h5>
-                                            <p className="suggested-user-username">{suggestedUser.username}</p>
-                                        </div>
-                                    </div>
-                                    <FollowButton 
-                                        size='small'
-                                        username={suggestedUser.username}
-                                    />
-                                </div>
-                            </React.Fragment>
-                        )
-                    })}
+                    <RenderSuggestedUsers 
+                        suggestedUsersList={suggestedUsersListRef}
+                    />
                 </div>
                 <div className="show-more-action-wrapper"
                     onClick={() => setShowMoreSuggestedUsersPopup(true)}
@@ -116,4 +95,51 @@ export default function WhoToFollow({
             </ReactModal>
         </React.Fragment>
     )
+}
+
+function RenderSuggestedUsers({suggestedUsersList}) {
+    if (suggestedUsersList === null || suggestedUsersList.length === 0) {
+        return (
+            <React.Fragment>
+                <p style={{
+                    width: '360px',
+                    paddingRight: '0.8rem',
+                    paddingLeft: '0.8rem',
+                    textAlign: 'center',
+                    color: 'var(--input-placeholder-color)'
+                }}>
+                    No suggested users right now!
+                </p>
+            </React.Fragment>
+        )
+    } else {
+        return (
+            <React.Fragment>
+                {suggestedUsersList.map((suggestedUser, index) => {
+                    return (
+                        <React.Fragment key={index} >
+                            <div className="suggested-user-block">
+                                <div className="suggested-user-details-wrapper">
+                                    <div className="suggested-user-profile-photo-wrapper">
+                                        <img src={suggestedUser.profile_image} 
+                                            alt={`profile ${suggestedUser.username}`}
+                                            className="suggested-user-profile-photo"
+                                        />
+                                    </div>
+                                    <div className="suggested-user-account-details-wrapper">
+                                        <h5 className="suggested-user-fullName">{suggestedUser.fullName}</h5>
+                                        <p className="suggested-user-username">{suggestedUser.username}</p>
+                                    </div>
+                                </div>
+                                <FollowButton 
+                                    size='small'
+                                    username={suggestedUser.username}
+                                />
+                            </div>
+                        </React.Fragment>
+                    )
+                })}
+            </React.Fragment>
+        )
+    }
 }

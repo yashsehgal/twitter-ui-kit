@@ -178,7 +178,7 @@ function RenderSuggestedUsersModal({suggestedUsersList}) {
         return (
             <React.Fragment>
                 <h3 style={{
-                    width: '360px',
+                    width: '100%',
                     paddingRight: '0.8rem',
                     paddingLeft: '0.8rem',
                     textAlign: 'center',

@@ -1,72 +1,71 @@
-
 .who-to-follow-container {
-    overflow: hidden;
-    box-sizing: border-box;
-    width: fit-content;
-    border-radius: 18px;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: fit-content;
+  border-radius: 18px;
+  height: fit-content;
+  background-color: var(--primary-white-overlay-bg);
+  > .who-to-follow-title {
+    padding: 0.4rem 0.8rem;
+  }
+  > .suggested-users-follow_action-wrapper {
+    width: 100%;
     height: fit-content;
-    background-color: var(--primary-white-overlay-bg);
-    > .who-to-follow-title {
-        padding: 0.4rem 0.8rem;
-    }
-    > .suggested-users-follow_action-wrapper {
-        width: 100%;
-        height: fit-content;
-        display: grid;
-        grid-template-columns: auto;
-        row-gap: 0.4rem;
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 0.4rem;
 
-        > .suggested-user-block {
-            padding-right: 0.8rem;
-            padding-left: 0.8rem;
-            width: 360px;
-            height: fit-content;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-            &:hover {
-                background-color: rgba($color: black, $alpha: 0.050);
-            }
-            > .suggested-user-details-wrapper {
-                display: flex;
-                align-items: center;
-                justify-content: flex-start;
-                gap: 0.6rem;
-                > .suggested-user-profile-photo-wrapper {
-                    width: 52px;
-                    margin: 0;
-                    padding: 0;
-                    height: auto;
-                    > .suggested-user-profile-photo {
-                        width: 100%;
-                        height: auto;
-                        border-radius: 50%;
-                    }
-                }
-                > .suggested-user-account-details-wrapper {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    gap: 1px;
-                    height: fit-content;
-                    * {
-                        padding: 0;
-                        margin: 0;
-                    }
-                    > .suggested-user-username {
-                        font-size: 14px;
-                        color: var(--primary-dimmed-bg-theme);
-                    }
-                }
-            }
+    > .suggested-user-block {
+      padding-right: 0.8rem;
+      padding-left: 0.8rem;
+      width: 360px;
+      height: fit-content;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      &:hover {
+        background-color: rgba($color: black, $alpha: 0.05);
+      }
+      > .suggested-user-details-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0.6rem;
+        > .suggested-user-profile-photo-wrapper {
+          width: 52px;
+          margin: 0;
+          padding: 0;
+          height: auto;
+          > .suggested-user-profile-photo {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+          }
         }
+        > .suggested-user-account-details-wrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 1px;
+          height: fit-content;
+          * {
+            padding: 0;
+            margin: 0;
+          }
+          > .suggested-user-username {
+            font-size: 14px;
+            color: var(--primary-dimmed-bg-theme);
+          }
+        }
+      }
     }
+  }
 
-    > .show-more-action-wrapper {
-        padding: 0.6rem 0.8rem;
-        &:hover {
-            background-color: rgba($color: black, $alpha: 0.050);
-        }
+  > .show-more-action-wrapper {
+    padding: 0.6rem 0.8rem;
+    &:hover {
+      background-color: rgba($color: black, $alpha: 0.05);
     }
+  }
 }

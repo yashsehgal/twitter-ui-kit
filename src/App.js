@@ -197,6 +197,19 @@ export default function App() {
           />
           <SearchInput />
         </div>
+        <div className="combined-search-wrapper"
+          style={{
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'center',
+            gap: '1.2rem'
+          }}
+        >
+          <SearchInput />
+          <Button>
+            Search
+          </Button>
+        </div>
       </div>
       <div className="input-variations-wrapper"
         style={{

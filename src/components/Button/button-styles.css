@@ -39,7 +39,7 @@ button:focus {
 }
 
 .secondary-btn {
-  background-color: var(--standard-white);
+  background-color: transparent;
   border-color: var(--primary-theme);
   color: var(--primary-theme);
 }
@@ -48,7 +48,7 @@ button:focus {
 }
 
 .solid-secondary-btn {
-  background-color: var(--standard-white);
+  background-color: transparent;
   border-color: var(--dark-outline);
   color: var(--standard-black);
 }
@@ -59,16 +59,18 @@ button:focus {
 .follow-btn {
   background-color: var(--standard-black);
   color: var(--standard-white);
+  border-color: transparent;
 }
 
 .following-btn {
-  background-color: var(--standard-white);
+  background-color: transparent;
   border-color: var(--dark-outline);
   color: var(--standard-black);
 }
 .following-btn:hover {
   background-color: var(--standard-black);
   color: var(--standard-white);
+  border-color: transparent;
 }
 
 .unfollow-btn {

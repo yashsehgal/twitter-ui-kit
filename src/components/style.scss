@@ -44,3 +44,11 @@
 .twitter-font {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
 }
+
+.twitter-icon {
+    border-radius: 50%;
+    padding: 1.2px;
+    &:hover {
+        background-color: var(--primary-black-outline-hover);
+    }
+}

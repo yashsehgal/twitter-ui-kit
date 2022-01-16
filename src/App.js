@@ -229,9 +229,7 @@ export default function App() {
         }}
       >
         <h2>Who To Follow Component</h2>
-        <WhoToFollow 
-          suggestedUsers={demoSuggestedUsersRef}
-        />
+        <WhoToFollow suggestedUsers={demoSuggestedUsersRef} />
         <WhoToFollow />
       </div>
     </div>

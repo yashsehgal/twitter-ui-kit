@@ -1,5 +1,15 @@
 # Twitter UI Kit (Re-Design)
 
+<img src="assets/repository-banner.svg" 
+    alt="repository-banner"
+    style="
+        width: 94%;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    "
+/>
+
 In this repository, I am re-creating Twitter's design system using Figma, React components and then documenting it using Notion pages.
 You can easily open this project on Gitpod.
 

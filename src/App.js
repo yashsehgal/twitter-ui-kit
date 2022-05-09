@@ -13,14 +13,14 @@ import WhoToFollow from "./components/WhoToFollow";
 export default function App() {
   const [demoSuggestedUsersRef] = useState([
     {
-      'profile_image': 'https://pbs.twimg.com/profile_images/1372019899246120965/lTeCqGyR_400x400.jpg',
-      'fullName': 'Yash Sehgal 🍊',
+      'profile_image': 'https://pbs.twimg.com/profile_images/1521240663622549505/Ytasagyx_400x400.jpg',
+      'fullName': 'Yash Sehgal 🍊 I do #ProductDesign and #Frontend',
       'username': 'yashsehgaldev'
     },
     {
-      'profile_image': 'https://pbs.twimg.com/profile_images/1381737932780752896/MbHGl54A_400x400.png',
-      'fullName': 'Notion',
-      'username': 'NotionHQ'
+      'profile_image': 'https://pbs.twimg.com/profile_images/1501972027778994179/ePYKmEjf_400x400.jpg',
+      'fullName': 'AsyncAPI Initiative',
+      'username': 'AsyncAPISpec'
     },
     {
       'profile_image': 'https://pbs.twimg.com/profile_images/1354479643882004483/Btnfm47p_400x400.jpg',
